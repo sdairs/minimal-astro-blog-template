@@ -8,7 +8,7 @@ const { data } = Astro.props;
 <BaseLayout pageTitle={data.title}>
   <h1>{data.title}</h1>
   <button
-    class="text-sm bg-lime-500 text-black py-2 px-4 rounded-lg"
+    class="text-sm bg-sky-500 text-black py-2 px-4 rounded-lg"
     id="share_button"
     onclick="copy()"
     >Copy post URL
@@ -28,7 +28,7 @@ const { data } = Astro.props;
     >
   </button>
   <slot />
-  <h3 class="text-lime-500">Post tags</h3>
+  <h3 class="text-sky-500">Post tags</h3>
   <TagCloud tags={data.tags} />
 </BaseLayout>
 
