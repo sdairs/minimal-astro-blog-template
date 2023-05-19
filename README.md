@@ -19,6 +19,20 @@ This template has very few features, with the goal of being a lightweight starti
 
 ## How to use
 
+Confiure your `site` URL in [astro.config.mjs](./astro.config.mjs), this is used to generate the RSS feed.
+
+Configure site name & description in [./src/pages/rss.xml.js](./src/pages/rss.xml.js).
+
+Configure social media accounts in [./src/components/Social.astro](./src/components/Social.astro).
+
+Configure project links in [./src/components/Projects.astro](./src/components/Projects.astro).
+
+Configure any Navigation links in [./src/components/Nav.astro](./src/components/Nav.astro) (this is empty by default).
+
+Configure your site Header in [./src/components/Header.astro](./src/components/Header.astro).
+
+Configure your About section in [./src/components/About.astro](./src/components/About.astro).
+
 Blog posts are contained in [`./src/content/blog`](./src/content/blog) using Astro's [Content Collections](https://docs.astro.build/en/guides/content-collections/). Add a new folder for each blog post, with a file called `index.md` or `index.mdx`. 
 
 Images for your blog posts can be placed in an `images` folder inside the blog post's folder. For an example, see ['blog-post-1'](./src/content/blog/blog-post-1/).
